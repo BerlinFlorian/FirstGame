@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 9001071164081445149}
   - component: {fileID: 9001071164081445122}
   - component: {fileID: 9001071164081445150}
-  - component: {fileID: 9001071164081445151}
+  - component: {fileID: 5462847350261905825}
+  - component: {fileID: -8739434515902618355}
   m_Layer: 0
   m_Name: ZombieG
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,9 +125,22 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &9001071164081445151
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!114 &5462847350261905825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001071164081445123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ca4b4ca3194b9489a06b3915bd686c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+--- !u!70 &-8739434515902618355
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -138,16 +152,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19860435, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8927913, y: 2.11}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.17993212, y: 0.014205217}
+  m_Size: {x: 0.79755306, y: 2.0815892}
+  m_Direction: 0

@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     
     private bool isGrounded = true;
     private string GROUND_TAG = "Ground";
+    private string ENEMY_TAG = "Enemy";
     
     // Start is called before the first frame update
     void Start()
@@ -34,11 +35,6 @@ public class Player : MonoBehaviour
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
-
-    }
-
-    private void FixedUpdate()
-    {
         PlayerJump();
     }
 
@@ -80,6 +76,11 @@ public class Player : MonoBehaviour
         if (col.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+        }
+
+        if (col.gameObject.CompareTag(ENEMY_TAG))
+        {
+            Destroy(gameObject);
         }
     }
 } // class
